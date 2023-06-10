@@ -1,0 +1,22 @@
+{
+"name": "saints-social-network",
+"version": "1.0.0",
+"description": "API for a social network web application",
+"main": "server.js",
+"scripts": {
+  "start": "node server.js"
+},
+"keywords": [
+  "social network",
+  "API",
+  "Express.js",
+  "MongoDB",
+  "Mongoose"
+],
+"author": "saint",
+"license": "MIT",
+"dependencies": {
+  "express": "^4.17.1",
+  "mongoose": "^6.0.8"
+}
+}
