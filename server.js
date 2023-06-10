@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const routes = require('./routes');
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/snApi';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/socialnetwork';
 
 const app = express();
 
@@ -19,8 +19,6 @@ app.use(routes);
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
 });
 
 mongoose.connection.once('open', () => {
